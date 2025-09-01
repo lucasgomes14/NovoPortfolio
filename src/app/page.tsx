@@ -4,6 +4,7 @@ import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import { MdOutlinePhone } from "react-icons/md";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import Separator from "@/components/ui/Separator";
 
 export default function Home() {
     return (
@@ -74,14 +75,22 @@ export default function Home() {
                                     <IoDocumentTextOutline /> Currículo
                                 </Link>
                             </Button>
-                            <Button asChild className={"bg-[#9A0101] hover:bg-[#650A0B] hover:text-[#909595] mr-3"}>
+                            <Button asChild className={"bg-[#9A0101] hover:bg-[#650A0B] hover:text-[#909595]"}>
                                 <Link href="#contatos">
                                     <MdOutlinePhone /> Contato
                                 </Link>
                             </Button>
                         </div>
                     </section>
-                    <section id={"sobreMim"} className={"pb-200"}>
+                    <section id={"sobreMim"} className={"h-screen w-2/3 flex flex-col items-center text-center text-[#9A0101]"}>
+                        <h2 className={"tracking-[.5em] uppercase mt-20 mb-10 text-[#909595] text-lg px-7 py-2 font-semibold border-2 border-[#909595] rounded-xs"}>
+                            Sobre mim
+                        </h2>
+                        <p className={""}>Olá! Sou Lucas Matheus, estudante de Análise e Desenvolvimento de Sistemas no IFPB – Campus Esperança, com conclusão prevista para 2025. Apaixonado por tecnologia, tenho experiência prática em projetos acadêmicos e pessoais que envolvem <span className={"font-semibold text-[#C90000]"}>back-end, front-end e mobile</span>, utilizando principalmente <span className={"font-semibold text-[#C90000]"}>Java (Spring Boot), React.js, React Native e Kotlin.</span></p>
+                        <p className={""}>Já desenvolvi aplicações com <span className={"font-semibold text-[#C90000]"}>microsserviços, autenticação segura e integração com RabbitMQ</span>, além de trabalhar com bancos de dados relacionais e não relacionais. Também atuei em equipes ágeis com Scrum, participando de sprints, dailies e revisões, o que me trouxe experiência em colaboração e entrega contínua.</p>
+                        <p className={""}>Tenho maior interesse em atuar como <span className={"font-semibold text-[#C90000]"}>desenvolvedor back-end</span>, mas minha vivência em outras áreas me permite enxergar soluções de forma <span className={"font-semibold text-[#C90000]"}>full stack</span>. Meu objetivo é aplicar meus conhecimentos em projetos reais, contribuir para equipes colaborativas e continuar evoluindo como profissional.</p>
+                        <p className={""}></p>
+                        <Separator />
                     </section>
                 </main>
             </div>
