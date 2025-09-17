@@ -65,42 +65,64 @@ export default function Home() {
                             eficientes e inovadoras. Busco sempre aprender e aplicar as melhores tecnologias e
                             práticas de desenvolvimento.
                         </p>
-                        <div className={"mt-10"}>
-                            <Button asChild className={"bg-[#DFC582] text-[#031926] rounded-full mr-3 hover:shadow-lg hover:shadow-[#DFC582]/50 transition-shadow hover:bg-[#DFC582]"}>
-                                <Link href="/curriculoNovo.pdf" download>
-                                    <IoDocumentTextOutline/> Currículo
-                                </Link>
-                            </Button>
-                            <Button asChild className={"bg-[#DFC582] text-[#031926] rounded-full hover:shadow-lg hover:shadow-[#DFC582]/50 transition-shadow hover:bg-[#DFC582]"}>
-                                <Link href="#contatos">
-                                    <MdOutlinePhone/> Contato
+                        <div className={"mt-5"}>
+                            <Button asChild className={"bg-[#DFC582] text-[#031926] font-semibold rounded-full mr-3 hover:shadow-lg hover:shadow-[#DFC582]/50 transition-shadow hover:bg-[#DFC582]"}>
+                                <Link href="#projetos">
+                                    Meus trabalhos
                                 </Link>
                             </Button>
                         </div>
                     </section>
                 </div>
-                <section id={"sobreMim"}
-                         className={"h-screen w-2/3 flex flex-col items-center text-center text-[#9A0101]"}>
-                    <h2 className={"tracking-[.5em] uppercase mt-20 mb-10 text-[#909595] text-lg px-7 py-2 font-semibold border-2 border-[#909595] rounded-xs"}>
-                        Sobre mim
-                    </h2>
-                    <p className={""}>Olá! Sou Lucas Matheus, estudante de Análise e Desenvolvimento de Sistemas no
-                        IFPB – Campus Esperança, com conclusão prevista para 2025. Apaixonado por tecnologia, tenho
-                        experiência prática em projetos acadêmicos e pessoais que envolvem <span
-                            className={"font-semibold text-[#C90000]"}>back-end, front-end e mobile</span>,
-                        utilizando principalmente <span className={"font-semibold text-[#C90000]"}>Java (Spring Boot), React.js, React Native e Kotlin.</span>
-                    </p>
-                    <p className={""}>Já desenvolvi aplicações com <span className={"font-semibold text-[#C90000]"}>microsserviços, autenticação segura e integração com RabbitMQ</span>,
-                        além de trabalhar com bancos de dados relacionais e não relacionais. Também atuei em equipes
-                        ágeis com Scrum, participando de sprints, dailies e revisões, o que me trouxe experiência em
-                        colaboração e entrega contínua.</p>
-                    <p className={""}>Tenho maior interesse em atuar como <span
-                        className={"font-semibold text-[#C90000]"}>desenvolvedor back-end</span>, mas minha vivência
-                        em outras áreas me permite enxergar soluções de forma <span
-                            className={"font-semibold text-[#C90000]"}>full stack</span>. Meu objetivo é aplicar
-                        meus conhecimentos em projetos reais, contribuir para equipes colaborativas e continuar
-                        evoluindo como profissional.</p>
-                    <p className={""}></p>
+                <section
+                    id="sobreMim"
+                    className="relative h-screen w-full rounded-bl-[25rem] rounded-br-[12rem] bg-[#468189]/50 overflow-hidden flex items-center justify-end px-10"
+                >
+                    {/* imagem no fundo */}
+                    <Image
+                        src="/sobremim.png"
+                        alt="Sobre mim imagem"
+                        width={300}
+                        height={300}
+                        className="absolute bottom-0 left-1/5 -translate-x-1/2 w-full max-w-sm h-auto"
+                    />
+
+                    {/* conteúdo alinhado */}
+                    <div className="max-w-xl mr-15 text-[#F2F5FA] text-sm">
+                        <h2 className="text-4xl font-semibold">Sobre mim</h2>
+                        <div className="h-1 w-20 bg-[#DFC582] mt-3 rounded-full"></div>
+                        <p className="mt-6">
+                            Olá! Sou Lucas Matheus, estudante de Análise e Desenvolvimento de Sistemas no
+                            IFPB – Campus Esperança, com conclusão prevista para 2025. Apaixonado por tecnologia, tenho
+                            experiência prática em projetos acadêmicos e pessoais que envolvem back-end, front-end e
+                            mobile,
+                            utilizando principalmente Java (Spring Boot), React.js, React Native e Kotlin.
+                        </p>
+                        <p className="mt-4">
+                            Já desenvolvi aplicações com microsserviços, autenticação segura e integração com RabbitMQ,
+                            além de trabalhar com bancos de dados relacionais e não relacionais. Também atuei em equipes
+                            ágeis com Scrum, participando de sprints, dailies e revisões, o que me trouxe experiência em
+                            colaboração e entrega contínua.
+                        </p>
+                        <p className="mt-4">
+                            Tenho maior interesse em atuar como desenvolvedor back-end, mas minha vivência
+                            em outras áreas me permite enxergar soluções de forma full stack. Meu objetivo é aplicar
+                            meus conhecimentos em projetos reais, contribuir para equipes colaborativas e continuar
+                            evoluindo como profissional.
+                        </p>
+                        <div className={"mt-10"}>
+                            <Button asChild className={"bg-transparent text-[#DFC582] mr-3 rounded-full border hover:shadow-lg hover:shadow-[#F2F5FA]/50 transition-shadow hover:bg-transparent font-semibold"}>
+                                <Link href="#contatos">
+                                    <MdOutlinePhone/> Contato
+                                </Link>
+                            </Button>
+                            <Button asChild className={"bg-[#DFC582] text-[#031926] rounded-full hover:shadow-lg hover:shadow-[#DFC582]/50 transition-shadow hover:bg-[#DFC582] font-semibold"}>
+                                <Link href="/curriculoNovo.pdf" download>
+                                    <IoDocumentTextOutline/> Download CV
+                                </Link>
+                            </Button>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
